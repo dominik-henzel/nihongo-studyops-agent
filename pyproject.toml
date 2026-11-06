@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nihongo-studyops-agent"
+version = "0.1.0"
+description = "Autonomous multi-agent Japanese reading-to-Anki study-pack pipeline built with Google Agent Development Kit (ADK)."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Dominik Henzel" }
+]
+dependencies = [
+    "google-adk>=1.0.0",
+    "google-genai>=1.0.0",
+    "pydantic>=2.7.0",
+    "google-cloud-firestore>=2.16.0",
+    "google-cloud-discoveryengine>=0.11.14",
+    "google-cloud-secret-manager>=2.20.0",
+    "google-cloud-dlp>=3.18.0",
+    "google-cloud-logging>=3.10.0",
+    "opentelemetry-api>=1.25.0",
+    "opentelemetry-sdk>=1.25.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nihongo_agent*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"

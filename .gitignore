@@ -1,0 +1,43 @@
+# Python virtual environments & bytecode
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Packaging & build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test, coverage & linter caches
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Local SQLite fallback databases & session state
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-wal
+*.db
+
+# Terraform state & provider caches
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+
+# Local environment secrets (never commit credentials)
+.env
+.env.*
+*.pem
+*credentials*.json

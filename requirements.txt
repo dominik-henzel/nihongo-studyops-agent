@@ -1,0 +1,19 @@
+# Core Agent Runtime & LLM SDKs
+google-adk>=1.0.0
+google-genai>=1.0.0
+pydantic>=2.7.0
+
+# Managed Cloud Persistence, Search, Security & Secret Stores
+google-cloud-firestore>=2.16.0
+google-cloud-discoveryengine>=0.11.14
+google-cloud-secret-manager>=2.20.0
+google-cloud-dlp>=3.18.0
+google-cloud-logging>=3.10.0
+
+# Distributed Tracing (OpenTelemetry)
+opentelemetry-api>=1.25.0
+opentelemetry-sdk>=1.25.0
+
+# Automated Regression & Evaluation Harness
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
