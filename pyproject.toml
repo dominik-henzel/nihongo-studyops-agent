@@ -36,6 +36,8 @@ where = ["."]
 include = ["nihongo_agent*"]
 
 [tool.pytest.ini_options]
+pythonpath = ["."]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
+asyncio_default_fixture_loop_scope = "function"
 addopts = "-v --tb=short"
