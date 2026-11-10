@@ -2,6 +2,7 @@
 google-adk>=1.0.0
 google-genai>=1.0.0
 pydantic>=2.7.0
+starlette>=1.0.1
 
 # Managed Cloud Persistence, Search, Security & Secret Stores
 google-cloud-firestore>=2.16.0
